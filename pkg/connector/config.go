@@ -51,6 +51,10 @@ type Config struct {
 
 	AnimatedSticker msgconv.AnimatedStickerConfig `yaml:"animated_sticker"`
 
+	// Privacy settings
+    DisablePresenceUpdates    bool `yaml:"disable_presence_updates"`
+    DisableReadReceipts      bool `yaml:"disable_read_receipts"`
+
 	HistorySync struct {
 		MaxInitialConversations int  `yaml:"max_initial_conversations"`
 		RequestFullSync         bool `yaml:"request_full_sync"`
